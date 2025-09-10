@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Maina",
   name: `Dennis Maina`,
   role: "Web Developer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   email: "example@gmail.com",
   location: "Africa/Nairobi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Kiswahili","Kikuyu"], // optional: Leave the array empty if you don't want to display languages
@@ -14,8 +14,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and development</>,
+  title: <>Subscribe to {person.lastName}'s Newsletter</>,
+  description: <>My monthly newsletter about creativity and development</>,
 };
 
 const social: Social = [
@@ -27,14 +27,14 @@ const social: Social = [
     link: "https://github.com/wamwagii",
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: "Behance",
+    icon: "behance",
+    link: "https://www.behance.net/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Medium",
+    icon: "medium",
+    link: "https://www.medium.com/",
   },
   {
     name: "Email",
@@ -45,7 +45,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/motorsbg.webp",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -60,7 +60,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/developing-ecommerce-platform", // Link to a specific project
   },
   subline: (
     <>
@@ -84,7 +84,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -119,12 +119,7 @@ const about: About = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          
         ],
       },
       {
@@ -176,18 +171,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+         
         ],
       },
       {
@@ -211,12 +195,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          
         ],
       },  
     ],
@@ -250,12 +229,12 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/motorsbg.webp",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/portiarev.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -270,7 +249,7 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/portiarev.png",
       alt: "image",
       orientation: "vertical",
     },
